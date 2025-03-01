@@ -53,7 +53,7 @@ def ask_openai():
     
     messages = [
         SystemMessagePromptTemplate.from_template(prompt_template),
-        HumanMessagePromptTemplate.from_template("{question}")
+        HumanMessagePromptTemplate.from_template("{query}")
     ]
     chat_prompt = ChatPromptTemplate.from_messages(messages)
 
